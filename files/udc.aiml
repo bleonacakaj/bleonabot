@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>
+        <random>
+            <li>Pershendetje, si mund t'ju ndihmoj?</li>
+            <li>Mund te jeni me i qarte?</li>
+            <li>Nuk mund t'ju kuptoj.</li>
+        </random>
+    </template>
+  </category>
+  <category>
+	<pattern>PERSHENDETJE ^</pattern>
+	<template>Pershendetje, si mund t'ju ndihmoj?</template>
+</category>
+<category>
+    <pattern></pattern>
+</category>
+<category>
+	<pattern>MIREDITA ^</pattern>
+	<template>Miredita, si mund t'ju ndihmoj?</template>
+</category>
+
+<category>
+	<pattern>A JENI JU NJE ROBOT ^</pattern>
+	<template>Po, une jam nje robot i krijuar nga Bleona.</template>
+</category>
+
+<category>
+	<pattern>_ BLEONA^</pattern>
+	<template>Bleona eshte nje studente, ne vitin e pare master Informatike. Une jam pjese e nje prej detyrave te saj</template>
+</category>
+<category>
+    <pattern>UNE QUHEM * DHE JAM * VJEC</pattern>
+    <template>Pershendetje, <star/>. 
+    Edhe une jam <star index="2"/> vjec.</template>
+</category>
+<category>
+    <pattern></pattern>
+</category>
+</aiml>
